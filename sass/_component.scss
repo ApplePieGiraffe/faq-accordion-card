@@ -12,10 +12,15 @@
     &__question {
         position: relative;
         margin-bottom: 1.5rem;
+        padding-right: 4rem;
         outline: none;
         color: var(--color-very-dark-greyish-blue);
-        font-size: 1.75rem;
+        font-size: 1.625rem;
         cursor: pointer;
+
+        @media only screen and (min-width: 1000px) {
+            font-size: 1.75rem;
+        }
 
         &::after {
             content: url(../img/icon-arrow-down.svg);
@@ -35,7 +40,7 @@
 
     &__answer {
         color: var(--color-dark-greyish-blue);
-        padding-right: 2rem;
+        padding-right: 4rem;
         line-height: 2rem;
     }
 }

@@ -3,42 +3,85 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 0 3rem;
-    background: linear-gradient(var(--color-soft-violet), var(--color-soft-blue));
+    // padding: 0 3rem;
+    padding-top: 18rem;
+    padding-bottom: 8rem;
+
+    background: linear-gradient(270deg, var(--color-soft-violet), var(--color-soft-blue));
+    background-size: 400% 400%;
+    animation: bgGradientGlow 6s ease infinite;
 
     @media only screen and (min-width: 1000px) {
         padding: 0 8rem;
     }
 }
 
-.card {
+.card-cube-wrapper {
     position: relative;
-    width: 110rem;
-    height: 64rem;
+}
+
+.cube-img {
+    position: absolute;
+    top: -5.5rem;
+    left: 50%;
+    width: 12rem;
+    height: auto;
+    margin-left: -15.5rem;
+    animation: bob 2s infinite;
+
+    @media only screen and (min-width: 1000px) {
+        position: absolute;
+        top: 25.75rem;
+        left: -11.5rem;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
     border-radius: 3rem;
     box-shadow: 0 5rem 5rem -10px rgba(0, 0, 0, .25);
 
-    background: url(../img/illustration-woman-online-mobile.svg), url(../img/bg-pattern-mobile.svg), white;
-    background-position: 50% -15rem, -72rem 68%;
+    background: url(../img/bg-pattern-mobile.svg), white;
+    background-position: 50% 0;
     background-repeat: no-repeat;
     overflow: visible;
 
 
     @media only screen and (min-width: 1000px) {
-        background: url(../img/illustration-woman-online-desktop.svg), url(../img/bg-pattern-desktop.svg), white;
-        background-position: -10.5rem 47%, -72rem 68%;
+        flex-direction: row;
+        width: 110rem;
+        max-width: none;
+        height: 64rem;
+        background: url(../img/bg-pattern-desktop.svg), white;
+        background-position: -72rem 68%;
         background-repeat: no-repeat;
+        overflow: hidden;
     }
 
-    &__cube-img {
-        position: absolute;
-        top: 25.75rem;
-        left: -11.5rem;
-        animation: bob 2s infinite;
+    &__img {
+        align-self: center;
+        width: 30rem;
+        height: auto;
+        margin-top: -13.75rem;
+
+        @media only screen and (min-width: 1000px) {
+            align-self: center;
+            width: auto;
+            height: auto;
+            margin-top: -1.5rem;
+            margin-left: -10.5rem;
+        }
     }
 
     &__text-wrapper {
         padding: 9rem 3rem;
+        padding-bottom: 4rem;
+        overflow-y: scroll;
 
         @media only screen and (min-width: 1000px) {
             width: 50%;
@@ -46,6 +89,11 @@ body {
             padding: 9rem 0;
             padding-right: 7rem;
             padding-left: 4.5rem;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
         }
     }
 
