@@ -283,6 +283,7 @@ body {
 .card__text-wrapper {
   padding: 9rem 3rem;
   padding-bottom: 4rem;
+  scrollbar-width: none;
   overflow-y: scroll;
 }
 

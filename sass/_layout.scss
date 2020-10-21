@@ -84,6 +84,7 @@ body {
     &__text-wrapper {
         padding: 9rem 3rem;
         padding-bottom: 4rem;
+        scrollbar-width: none;
         overflow-y: scroll;
 
         @media only screen and (min-width: 1000px) {
