@@ -28,6 +28,7 @@ body {
     height: auto;
     margin-left: -15.5rem;
     animation: bob 2s infinite;
+    z-index: 10;
 
     @media only screen and (min-width: 1000px) {
         position: absolute;
@@ -68,6 +69,8 @@ body {
         width: 30rem;
         height: auto;
         margin-top: -13.75rem;
+        animation: fadeInUp 1s;
+        z-index: 5;
 
         @media only screen and (min-width: 1000px) {
             align-self: center;
