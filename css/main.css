@@ -169,6 +169,7 @@ html {
 }
 
 body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,6 +315,21 @@ body {
 .card hr {
   border: 0;
   border-top: 1px solid var(--color-light-greyish-blue);
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 11px;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-light-greyish-blue);
 }
 
 body {

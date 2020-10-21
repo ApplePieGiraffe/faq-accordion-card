@@ -1,9 +1,9 @@
 body {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    // padding: 0 3rem;
     padding-top: 18rem;
     padding-bottom: 8rem;
 
@@ -112,5 +112,19 @@ body {
     hr {
         border: 0;
         border-top: 1px solid var(--color-light-greyish-blue);
+    }
+}
+
+.attribution {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translate(-50%);
+    font-size: 11px;
+    line-height: 1.75rem;
+    text-align: center;
+
+    a {
+        color: var(--color-light-greyish-blue);
     }
 }
