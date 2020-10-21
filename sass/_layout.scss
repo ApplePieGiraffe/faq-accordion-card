@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 3rem;
+    background: linear-gradient(var(--color-soft-violet), var(--color-soft-blue));
+
+    @media only screen and (min-width: 1000px) {
+        padding: 0 8rem;
+    }
+}
+
+.card {
+    position: relative;
+    width: 110rem;
+    height: 64rem;
+    border-radius: 3rem;
+    box-shadow: 0 5rem 5rem -10px rgba(0, 0, 0, .25);
+
+    background: url(../img/illustration-woman-online-mobile.svg), url(../img/bg-pattern-mobile.svg), white;
+    background-position: 50% -15rem, -72rem 68%;
+    background-repeat: no-repeat;
+    overflow: visible;
+
+
+    @media only screen and (min-width: 1000px) {
+        background: url(../img/illustration-woman-online-desktop.svg), url(../img/bg-pattern-desktop.svg), white;
+        background-position: -10.5rem 47%, -72rem 68%;
+        background-repeat: no-repeat;
+    }
+
+    &__cube-img {
+        position: absolute;
+        top: 25.75rem;
+        left: -11.5rem;
+        animation: bob 2s infinite;
+    }
+
+    &__text-wrapper {
+        padding: 9rem 3rem;
+
+        @media only screen and (min-width: 1000px) {
+            width: 50%;
+            margin-left: auto;
+            padding: 9rem 0;
+            padding-right: 7rem;
+            padding-left: 4.5rem;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @media only screen and (min-width: 1000px) {
+            text-align: start;
+        }
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid var(--color-light-greyish-blue);
+    }
+}

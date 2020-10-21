@@ -1,0 +1,41 @@
+.faq {
+    margin: 2rem 0;
+
+    &[open] &__question {
+        font-weight: 700;
+
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__question {
+        position: relative;
+        margin-bottom: 1.5rem;
+        outline: none;
+        color: var(--color-very-dark-greyish-blue);
+        font-size: 1.75rem;
+        cursor: pointer;
+
+        &::after {
+            content: url(../img/icon-arrow-down.svg);
+            position: absolute;
+            right: 0;
+            transition: all .3s;
+
+            @media only screen and (min-width: 1000px) {
+                right: 1.5rem;
+            }
+        }
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    &__answer {
+        color: var(--color-dark-greyish-blue);
+        padding-right: 2rem;
+        line-height: 2rem;
+    }
+}

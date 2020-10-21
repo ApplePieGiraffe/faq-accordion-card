@@ -1,0 +1,22 @@
+:root {
+    --color-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --color-soft-red: hsl(14, 88%, 65%);
+    --color-soft-violet: hsl(273, 75%, 66%);
+    --color-soft-blue: hsl(240, 73%, 65%);
+    --color-very-dark-greyish-blue: hsl(237, 12%, 33%);
+    --color-dark-greyish-blue: hsl(240, 6%, 50%);
+    --color-light-greyish-blue: hsl(240, 5%, 91%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 50%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
