@@ -133,6 +133,7 @@ html {
   margin-bottom: 1.5rem;
   padding-right: 4rem;
   outline: none;
+  list-style: none;
   color: var(--color-very-dark-greyish-blue);
   font-size: 1.625rem;
   cursor: pointer;
@@ -142,6 +143,10 @@ html {
   .faq__question {
     font-size: 1.75rem;
   }
+}
+
+.faq__question:hover {
+  color: var(--color-soft-red);
 }
 
 .faq__question::after {
